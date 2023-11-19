@@ -30,7 +30,7 @@ public class Node {
      *
      * @param parent - данная ветка станет родительской
      */
-    public void setParent(Node parent) {
+    public synchronized void setParent(Node parent) {
         this.parent = parent;
         this.tabCount = getTabCount();
     }
