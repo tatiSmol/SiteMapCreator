@@ -9,14 +9,11 @@ import java.util.Scanner;
 import java.util.concurrent.ForkJoinPool;
 
 public class Main {
-    public static final String RESET = "\u001B[0m";
-    public static final String GREEN_UNDERLINED = "\033[4;32m";
     private static final String FOLDER_PATH = "data";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the website address in format like " +
-                            GREEN_UNDERLINED + "https://example.com/" + RESET + ":");
+        System.out.println("Enter the website address in format like https://example.com/:");
         String rootLink = scanner.nextLine();
 
         try {

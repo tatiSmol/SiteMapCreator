@@ -30,7 +30,7 @@ public class MapCreator extends RecursiveAction {
                 }
             }
         } catch (InterruptedException | IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         for (Node child : node.getChildren()) {
